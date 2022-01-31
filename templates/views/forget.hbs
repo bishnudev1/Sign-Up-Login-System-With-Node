@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title> Reset your iBlog App password </title>
+    <link rel="stylesheet" href="Auth.css">
+</head>
+    <body>
+        <div class="login-page">
+            <div class="form">
+                <div class="login">
+                    <div class="login-header">
+                        <h3>Reset your iBlog  Password</h3>
+                        <p id="lostPass"></p>
+                    </div>
+                </div>
+                <form class="login-form" action="/forget" method="POST">
+                    <input name="email" type="email" id="email" placeholder="Enter your Account Email..." autocomplete="off"/>
+                    {{!-- <button id="resetPassBtn">Reset Password</button> --}}
+                    <input type="submit" name="loginform" id="resetPassBtn">
+                    <br>
+                    <button id="logBtnAgain"><a href="login">Log In Again</a></button>
+                </form>
+            </div>
+        </div>
+    </body>
+<script src="forgetPass.js"></script>
+</html>

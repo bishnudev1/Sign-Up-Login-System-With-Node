@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title> Register to iBlog App </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="login-page">
+            <div class="form">
+                <div class="login">
+                    <div class="login-header">
+                        <h3>Admin Dashboard</h3>
+                        <p>Enter your credentials to Sign up to iBlogs</p>
+                    </div>
+                </div>
+                <form class="login-form" action="/register" method="POST" >
+                    <input name="email" type="email" id="email" placeholder="Email" autocomplete="off"/>
+                    <input name="username" type="text" id="username" placeholder="Username" autocomplete="off"/>
+                    <input name="password" type="password" id="password" placeholder="Password" autocomplete="off"/>
+                    {{!-- <button id="signBtn" type="submit">Sign Up</button> --}}
+                    <input type="submit" name="submitform" id="signBtn">
+                    <p class="message">Already registered? <a href="login">Log In</a></p>
+                </form>
+            </div>
+        </div>
+    </body>
+{{!-- <script src="Sign.js"></script> --}}
+</html>
